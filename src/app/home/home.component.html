@@ -1,0 +1,41 @@
+<!-- <h1 style="">Welcome</h1> -->
+<!--<div class="play-container">
+    <p>You've clicked <span (click)="countClick()">this</span> {{ clickCounter }} times.</p>
+</div>-->
+
+<div class="play-container">
+    <!-- Search form -->
+    <div class="search-bar-container">
+        <div class="field">
+            <p class="control has-icons-right">
+              <input class="input" type="text" (keyup)="filter($any($event.target).value)" placeholder="Search">
+              <span class="icon is-small is-right">
+                <i class="fas fa-search"></i>
+              </span>
+            </p>
+          </div>     
+    </div>
+
+     <div class="notes-list">
+        <app-note-cards class="notes-list " 
+        
+        *ngFor="let note of filteredNotes; index as i"
+          [routerLink]="[i]"
+          [title]="note.title" 
+          (delete)="deleteNote(i)"
+          [body]="note.body"></app-note-cards>
+        <!--<app-note-cards class="notes-list "></app-note-cards>
+        <app-note-cards class="notes-list "></app-note-cards>
+        <app-note-cards class="notes-list "></app-note-cards>
+        <app-note-cards class="notes-list "></app-note-cards> -->
+
+        
+
+     </div>
+     <div id="outer">
+      <button class="button floating-add-button is-primary" routerLink="new">+ Add</button>  <!-- <a routerLink="note-details" id="inner">+</a> -->
+    </div>
+    </div>
+
+
+

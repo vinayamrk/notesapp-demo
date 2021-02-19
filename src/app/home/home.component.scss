@@ -1,0 +1,74 @@
+
+
+
+span {
+    font-weight: bold;
+    background: lightgray;
+    padding: .3em .8em;
+    cursor: pointer;
+}
+
+.play-container {
+    padding: 3em;
+   // border: 1px  solid lightgray;
+
+    width: 100%;
+    height: 100%;
+
+   // border: 31px  solid lightgray;
+    margin-bottom: 1em;
+    top: 100%;
+    
+
+    .active-cyan input[type=search] {
+      border-bottom: 1px solid #4dd0e1;
+      box-shadow: 0 1px 0 0 #4dd0e1;
+      width: 40%;
+      }
+    input {
+        padding: 1em;
+        margin-bottom: 1em;
+        
+    }
+
+    a:link, a:visited {
+        background-color: #a79ddf;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(78, 50, 129);
+      }
+
+      .notes-list{
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+        max-height: 500px;
+         margin-top: 25px ;
+         margin-bottom: 25px;
+         margin-left: 25px;
+         float: left;
+       }
+    
+    #outer {
+      border: 0px solid rgb(240, 238, 243);
+      width:100%
+    }
+}
+app-note-card{
+  display: block;
+  margin-bottom: 25px;
+}
+.floating-add-button{
+  position: fixed;
+  right: 20px;
+  top: 115px;
+  width:150px;
+  background-color: rgb(78, 50, 129);
+
+}
